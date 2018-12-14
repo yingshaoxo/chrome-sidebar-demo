@@ -31,6 +31,7 @@ function send_msg_to_background(msg) {
 }
 
 function injectApp() {
+    /*
     var id = "chrome_sidebar_demo_dom"
     const newDiv = document.createElement("div");
     newDiv.setAttribute("id", id);
@@ -39,6 +40,7 @@ function injectApp() {
 
     var html_element = document.getElementsByTagName("html")[0]
     html_element.insertAdjacentHTML('afterbegin', newDiv.innerHTML)
+    */
 
     /*
     var id = "chrome_sidebar_demo_dom"
@@ -47,6 +49,18 @@ function injectApp() {
     document.body.appendChild(newDiv);
     ReactDOM.render(<App />, newDiv);
     */
+
+    var id = "chrome_sidebar_demo_dom"
+    const newDiv = document.createElement("div");
+    newDiv.setAttribute("id", id);
+
+    var html_element = document.getElementsByTagName("html")[0]
+    html_element.insertAdjacentHTML('afterbegin', newDiv.innerHTML)
+
+    console.log(document.getElementById(id))
+    document.body.appendChild(newDiv)
+    ReactDOM.render(<App />, newDiv);
+    console.log(document.getElementById(id))
 }
 
 injectApp()

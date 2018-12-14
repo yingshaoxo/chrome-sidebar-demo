@@ -113,7 +113,9 @@ class Navigation extends Component {
             >
                 <button
                     onClick={() => {
-                        send_msg_to_background("say hi")
+                        console.log("this was called from content.js(do.js)")
+                        console.log("fuck")
+                        //send_msg_to_background("say hi")
                     }}
                 >hi</button>
             </div>

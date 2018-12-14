@@ -4,9 +4,9 @@
   "description": "Description",
   "main": "src/js/main.js",
   "scripts": {
-    "build": "parcel build src/js/main.js -d src/build/ -o main.js && parcel build src/js/background.js -d src/build/ -o background.js"
+    "build": "parcel build src/js/main.js -d src/build/ -o main.js && parcel build src/js/background.js -d src/build/ -o background.js",
+    "watch": "parcel watch src/js/main.js src/js/background.js -d src/build/ -o main.js background.js"
   },
-  "author": "Atakan Goktepe",
   "dependencies": {
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
