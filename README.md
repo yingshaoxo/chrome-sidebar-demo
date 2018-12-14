@@ -17,10 +17,10 @@ ___
 
 After chrome get updated, you can't use sidebar API anymore (but for firefox, you still can use it (https://github.com/mdn/webextensions-examples/tree/master/theme-integrated-sidebar
 
-Then the only way for this feature becomes how to inject html codes into every website you are visiting.
+Then the only way for this feature to work becomes how to inject html codes into every website you are visiting.
 
-But don't feel happy too earler, google have setted a new rule for preveding you do this: `Content Security Policy`, it seems disabled all my `onClick` boundings for react component.
+But don't be happy too earler, google has setted up a new rule for preveding you to do this: `Content Security Policy`, it seems disabled all my `onClick` boundings in react component.
 
-Before I figure it out how to solve this problem, you can have a look at `NativeJavascript` branch of this repo.
+So before I figure it out how to solve this problem, you can still have a look at `NativeJavascript` branch of this repo (it works as expected.
 
-Thank you for reading.
+Thank you for the reading.
