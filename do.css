@@ -1,0 +1,24 @@
+.side_button {
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 99999; /* Stay on top */
+    top: 20px; /* Stay at the top */
+    left: 80px;
+}
+
+.side_navigation {
+    height: 750px; /* Full-height: remove this if you want "auto" height */
+    width: 200px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 99999; /* Stay on top */
+    top: 100px; /* Stay at the top */
+    left: 0;
+    background-color: #C0C0C0; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+
+    display: none;
+}
+
+.center {
+    text-align: center;
+    vertical-align: middle;
+}

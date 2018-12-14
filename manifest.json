@@ -1,30 +1,36 @@
 {
-  "manifest_version": 2,
+    "name": "sidebar_demo",
+    "version": "1.1",
+    "description": "just a demo",
 
-  "name": "chrome-sidebar",
-  "description": "A new generation of chrome sidebar",
-  "version": "1.0",
+    "icons": {
+        "16": "icon.png",
+        "32": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "manifest_version": 2,
 
-  "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "src/popup.html"
-  },
+    "permissions": ["<all_urls>", "tabs", "activeTab"],
 
-  "permissions": [
-    "activeTab",
-    "tabs",
-    "<all_urls>"
-  ],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "No More Chinese",
+        "default_icon": {
+            "16": "icon.png",
+            "32": "icon.png",
+            "48": "icon.png",
+            "128": "icon.png"
+        }
+    }, 
 
-  "background": {
-    "scripts": ["src/build/background.js"],
-    "persistent": true
-  },
-
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["src/build/main.js"]
-    }
-  ]
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["do.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        "do.css"
+    ]
 }
