@@ -13,7 +13,7 @@ Then, load extension from this folder.
 
 ___
 
-### current problems
+### current problem
 
 After chrome get updated, you can't use sidebar API anymore (but for firefox, you still can use it (https://github.com/mdn/webextensions-examples/tree/master/theme-integrated-sidebar
 
