@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+
+  "name": "chrome-sidebar",
+  "description": "A new generation of chrome sidebar",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "src/popup.html"
+  },
+
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "<all_urls>"
+  ],
+
+  "background": {
+    "scripts": ["src/build/background.js"],
+    "persistent": true
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/build/main.js"]
+    }
+  ]
+}
