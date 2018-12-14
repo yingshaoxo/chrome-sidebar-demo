@@ -21,6 +21,6 @@ Then the only way for this feature to work becomes how to inject html codes into
 
 But don't be happy too earler, google has setted up a new rule for preveding you to do this: `Content Security Policy`, it seems disabled all my `onClick` boundings in react component.
 
-So before I figure it out how to solve this problem, you can still have a look at `NativeJavascript` branch of this repo (it works as expected.
+So before I figure it out how to solve this problem, you can still have a look at [NativeJavascript branch](https://github.com/yingshaoxo/chrome-sidebar-demo/tree/native_javascript) of this repo (it works as expected.
 
 Thank you for the reading.
