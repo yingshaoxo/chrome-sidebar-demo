@@ -1,4 +1,9 @@
 node_modules/
 .cache/
+
 *.map
-src/build/
+*.css
+*.js
+
+index.html
+yarn.lock

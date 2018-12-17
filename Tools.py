@@ -6,7 +6,16 @@ py = Python()
 t = Terminal()
 
 class Tools():
+    def clear(self):
+        t.run("""
+        rm *.map
+        rm *.js
+        rm *.css
+        rm index.html
+        """)
+
     def push(self, comment):
+        self.clear()
         t.run('git add .')
         t.run('git commit -m "{}"'.format(comment))
         t.run('git push origin')
