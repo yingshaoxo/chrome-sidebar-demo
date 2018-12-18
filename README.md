@@ -1,6 +1,6 @@
 # chrome-sidebar-demo
 
-This was for DaNiu tech group.
+This project was deprecated, you can have a look at the new project: https://github.com/DaniuTeam/Work_Siderbar
 
 ___
 
